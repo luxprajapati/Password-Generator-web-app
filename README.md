@@ -10,7 +10,7 @@ No installation is required for this password generator. You can use it directly
 
 To generate a password, follow these steps:
 
-1. Visit the [Password Generator](https://example.com/password-generator) link.
+1. Visit the [Password Generator](https://lux-prajapati-password-generator.netlify.app/) link.
 
 2. Customize your password preferences, such as length and character types.
 
