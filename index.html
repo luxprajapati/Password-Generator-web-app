@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paswword Generator | Lux Prajapati</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Password Generator</h1>
+    <!-- display-container -->
+    <div class="display-container">
+      <input readonly placeholder="Password" class="display" data-passwordDisplay>
+      <button class="copyBtn" data-copy>
+        <span class="toolTip" data-copyMsg></span>
+        <img src="https://codehelp-password-generator.netlify.app/assets/copy.svg"  width="24" height="24">
+      </button>
+    </div>
+
+    <!-- Input container -->
+    <div class="input-container">
+      <!-- password length -->
+      <div class="length-container">
+        <p>Password Length</p>
+        <p data-lengthNumber>10</p>
+      </div>
+
+      <!-- slider -->
+      <input type="range" min="1" max="20" class="slider" id="myRange" step="1" data-lengthSlider>
+
+      <!-- checkbox-->
+      <div class="check">
+        <input type="checkbox" id="uppercase" class="myCheckBox">
+        <label for="uppercase">Includes Uppercase Letters</label>
+      </div>
+      <div class="check">
+        <input type="checkbox" id="lowercase" class="myCheckBox">
+        <label for="lowercase">Includes Lowercase Letters</label>
+      </div>
+      <div class="check">
+        <input type="checkbox" id="numbers" class="myCheckBox">
+        <label for="numbers">Includes Numbers </label>
+      </div>
+      <div class="check">
+        <input type="checkbox" id="symbols" class="myCheckBox">
+        <label for="symbols">Includes Symbols</label>
+      </div>
+
+      <!-- Strength section -->
+      <div class="strength-container">
+        <p>Strength</p>
+        <div class="indicator" data-indicator></div>
+      </div>
+
+      <!-- generate password -->
+      <button class="generateBtn">Generate Password</button>
+    </div>
+
+
+
+  </div>
+
+
+
+  <script src="https://kit.fontawesome.com/dccd8322a4.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
